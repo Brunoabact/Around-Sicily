@@ -929,5 +929,11 @@ input:hover{
     .map{
         width: 130%;
     }
+    .txtbox{
+        padding: 12vh 5vw;
+    }
+    .txtbox2{
+        padding: 12vh 5vw;
+    }
 
 }

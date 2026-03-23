@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.34 165.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <path id="caltanissetta" class="cls-1" d="M161.84,162.47L59.06,59.69M8.61,42.17l33.98,33.98M59.06,59.69L15.91,16.54M76.05,42.7L42.07,8.71M42.6,76.15l33.46-33.46M40.81,14.92l7.46-7.46-11.28-3.95,3.82,11.42ZM13.69,21.74l7.46-7.46-11.28-3.95,3.82,11.42ZM7.32,48.41l7.46-7.46-11.28-3.95,3.82,11.42Z"/>
+  </g>
+</svg>

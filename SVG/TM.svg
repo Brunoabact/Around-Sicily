@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.36 84.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f5f9fd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8.69px;
+      }
+    </style>
+  </defs>
+  <g id="TM">
+    <path id="Trademark" class="cls-1" d="M4.98,22.26L37.2,4.35l.12,38.15M37.32,42.49L4.35,61.67l31.62,18.94M37.32,42.49l33.69,19.31V24.6"/>
+  </g>
+</svg>

@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior:none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(245, 249, 255);
+    color: #333333;
+    font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    padding: 0 8vw 0 8vw;
+    display: flex;
+    justify-content: space-between;
+    color: #f5f9fd;
+}
+.Trademark{             /* TRADEMARK CONTAINER*/
+    display: flex;
+    column-gap: 1vw;
+}
+#TM{
+    width: 5vw;
+    height: 8vh;
+    fill: none;
+    stroke: #f5f9fd;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.6vw;
+    overflow: visible;
+}
+#AS{            /* AROUND CITY LOGOTYPE*/
+      width: 14vw;
+         fill: #f5f9fd;
+        stroke: #f5f9fd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        overflow: visible;
+}
+.nav-left{
+     width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+ul{
+    display: flex;
+    gap: 4vw;
+   list-style: none;
+   font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+nav a{
+    text-decoration: none;
+    color: #f5f9fd;
+}
+nav a:hover{
+    color: #E8BA46;
+}
+
+.nav-right{
+display: flex;
+align-items: center;
+}
+
+                         /*HERO SECTION*/
+
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f5f9fd;
+    row-gap: 2vh;
+    
+}
+header svg{
+    overflow: visible;
+      width: 25vw;
+         fill: #f5f9fd;
+        stroke: #f5f9fd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px; 
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 1));
+}
+header p{
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 1));
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-weight: 300;
+    }
+
+.sect-1{
+    padding: 16vh 16vw 15vh 16vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}   
+.head h2{
+    font-family: "Satisfy";
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    color: #3F8AC9;
+}
+.head h1{
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-weight: 600;
+}
+
+.text-map{
+display: grid;
+place-items: center;
+}
+
+.map{
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    width: 65%;
+}
+
+.map svg{
+    fill: #E8BA46;
+    opacity: 0.3;
+}
+
+.corpo{
+    grid-column: 1;
+    grid-row: 1;            /*STRUTTURA*/
+    width: 50vw;
+
+    font-weight: 300;
+    font-size: clamp(0.8rem.1vw,1.3rem);
+    word-spacing: 0.4rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+
+    z-index: 2;             /*ALLINEAMENTO  E LIVELLAMENTO*/ 
+    transform: translateX(25%) translateY(0);
+}
+
+
+.sect-2{
+    padding: 16vh 8vw 20vh 8vw; 
+    display: flex;
+    flex-direction: row;
+}   
+
+.image-box{
+    display: flex;
+    gap: 0.7vw;
+}
+
+.image-box img{
+    width: 22vw;
+}
+
+.txtbox{
+    padding: 0 0 0 6vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    row-gap: 3vh;
+}
+.testa{
+    line-height: 3rem;
+}
+
+.testa h2{
+    font-family: "Satisfy";
+    color: #3F8AC9;
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.testa h1{
+font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.txtbox p{
+      font-weight: 200;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    word-spacing: 0.4rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+.cta{
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 3vh;
+}
+
+.btn-outlined{
+    display: flex;
+    justify-content: center;
+    border:#E8BA46 2px solid;
+    color: #E8BA46;
+     padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.25s ease-in;
+}
+.btn-filled{
+    grid-column: 1 / span 2; 
+    justify-self: start;
+    background-color: #E8BA46;
+    border: #E8BA46 solid 2px;
+    color: #f5f9fd;
+    padding: 0.6rem 1.5rem;
+    text-wrap: nowrap;
+    font-size: 1.3rem;
+    text-decoration: none;
+     border-radius: 25px;
+     transition: 0.25s ease-in;
+}
+.btn-outlined:hover{
+background-color: #3F8AC9;
+color: #f5f9fd;
+border: #3F8AC9 solid 2px;
+}
+
+.btn-filled:hover{
+background-color: #3F8AC9;
+color: #f5f9fd;
+border: #3F8AC9 solid 2px;
+}
+
+.sect-3{
+     padding: 16vh 8vw 30vh 8vw; 
+    display: flex;
+    flex-direction: row;
+}
+
+.txtbox2{
+    padding: 0 6vw 0 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    row-gap: 3vh;
+}
+.testa2{
+    line-height: 3rem;
+}
+
+.testa2 h2{
+    font-family: "Satisfy";
+    color: #3F8AC9;
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.testa2 h1{
+font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.txtbox2 p{
+    font-weight: 200;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    word-spacing: 0.4rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+
+.cta2{
+   padding: 2vh 0 0 0;
+}
+
+.image-box2{
+    display: flex;
+}
+
+.image-box2 img{
+    width: 45vw;
+}
+
+
+                         /*FOOTER*/
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #3F8AC9;
+    padding: 6vh 8vw 6vh 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     color: #f5f9fd;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.legal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.legal a{
+    width: fit-content;
+    color: #FFEDE8;
+     opacity: 0.5;
+     font-size: 1.2rem;
+    text-decoration: none;   
+}
+
+.legal a:hover{
+    opacity: 1;
+    color: #f5f9fd;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    font-family: "Satisfy";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.footer-right h3{
+    font-size: clamp(1rem,1.5vw,3rem);
+    text-align: right;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    opacity: 0.5;
+    transition: 0.2s ease-in;
+}
+.social-icons:hover{
+    opacity: 1;
+}
+
+.newsletter-form{        
+    display: flex; 
+}
+
+.newsletter-form input{
+    width: 25vw;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    background-color: rgb(245, 249, 253, 0.2);
+    border-radius: 25px 0 0 25px;
+    border:rgba(245, 249, 253, 0.241) solid 1px;
+    border-right: none;
+    color: #f5f9fd;
+    transition: 0.2s ease-in;
+}
+input::placeholder {
+    color: #f5f9fd; 
+    opacity: 0.5;
+}
+.newsletter-form input:focus{
+    outline: none;
+    box-shadow: 0 0 8px rgb(245, 249, 253, 0.2);
+}
+.newsletter-form:focus-within button{
+    box-shadow: 0 0 8px rgb(245, 249, 253, 0.3);
+}
+
+input:hover{
+       background-color: rgb(245, 249, 253, 0.35);
+}
+
+.news-btn{
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+    border: #E8BA46 solid 1px;
+    background-color: rgb(232, 186, 70);
+    transition: 0.2s ease-in;
+}
+
+.news-btn:hover svg{
+    fill: rgb(245, 249, 253, 0.9);
+}
+
+.newsletter-form svg{
+    width: 2.4vw;
+    height: 3vh;
+    fill: #3F8AC9;
+    transition: 0.1s ease-in-out;
+}
+
+   /* ----- EVENTI.HTML*/
+
+.sect-eventi{
+    padding: 16vh 8vw 20vh 8vw; 
+    display: flex;
+    flex-direction: row;
+}   
+
+.sect-eventi2{
+     padding: 16vh 8vw 30vh 8vw; 
+    display: flex;
+    flex-direction: row;
+}
+
+.txtbox-eventi{
+    padding: 0 0 0 6vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    row-gap: 3vh;
+} 
+.testa-eventi{
+    line-height: 3rem;
+} 
+.testa-eventi h2{
+    font-family: "Satisfy";
+    color: #3F8AC9;
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+.testa-eventi h1{
+    font-size: clamp(1.5rem, 6vw, 2.6rem);
+}
+.txtbox-eventi p{
+    font-weight: 200;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    word-spacing: 0.3rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+}   
+
+.txtbox2-eventi{
+    padding: 0 6vw 0 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    row-gap: 3vh;
+} 
+
+.testa2-eventi{
+    line-height: 3rem;
+} 
+
+.testa2-eventi h2{
+    font-family: "Satisfy";
+    color: #3F8AC9;
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+.testa2-eventi h1{
+    font-size: clamp(1.5rem, 6vw, 2.6rem);
+}
+.txtbox2-eventi p{
+    font-weight: 200;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    word-spacing: 0.3rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+}
+.back-top{
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: none;
+    border: #E8BA46 solid 4px;
+    transition: 0.2s ease-in;
+}
+
+.back-top svg{
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+.btop{
+    stroke: #E8BA46 !important; 
+}
+.back-top:hover{
+    background-color: rgb(245, 249, 253, 0.3);
+   box-shadow: 0 0 20px rgb(232, 186, 70, 1);
+}
+
+/* ----- PIAZZE*/
+.listap{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    column-gap: 5vw;
+    row-gap: 6vh;
+    padding: 0 10vw 30vh 10vw;
+}
+
+.listap, .card {
+    max-width: 100%;
+}
+
+.card{
+    background-color: rgb(63, 138, 201,0.05);
+    border-radius: 25px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1vh 15px 1px rgba(0, 0, 0, 0.1,);
+    transition: 0.25s ease-in-out;
+}
+
+.card-image{
+     overflow: hidden; 
+}
+
+.card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.25s ease-in-out;
+}
+
+.card-txt{
+    padding: 1rem 1.5rem 3.5rem 1.5rem;
+    color: rgb(63, 138, 201, 0.8);
+    transition: transform 0.25s ease-in-out, color 0.25s ease-in-out, filter 0.25s ease-in-out;
+}
+
+.card-txt h3{
+  font-size: 1.2rem;
+}
+
+.card-txt h4{
+    font-weight: 700;
+     line-height: 2rem;
+}
+
+.card-txt p{
+    font-weight: 300;
+}
+
+.card:hover .card-txt{
+    transform: translateY(5px); 
+     color: rgb(63, 138, 201, 1);
+  
+}
+
+.card:hover .card-image img{
+    transform: scale(1.1);
+}
+
+.card:hover{
+    box-shadow: 0 4vh 40px 0px rgba(0, 0, 0, 0.09);
+}
+
+/* LE CITTA' */
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.sect-card{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20vh 8vw 30vh 8vw;
+    column-gap: 15vw;
+}
+
+.iconroom{
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F8AC9;
+    margin-bottom: 3.5vh;
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,0.25);
+}
+
+.iconroom svg{
+    aspect-ratio: 1/1;
+    width: 60%;
+}
+.card-city{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-city h2{
+    white-space: nowrap;
+    font-weight: 500;
+    margin-bottom: 1.5vh;
+}
+
+.card-city p{
+    opacity: 0.8;
+}
+
+.last-sect{
+    min-height:1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 22.5vw 20vh 22.5vw;
+    background-image: url(IMGs/Hero_città/Piazza_Duomo\,_Catania\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.riquadro{
+    background-color: rgb(63, 138, 201, 0.85);
+    padding: 5.5vh 3.5vw;
+    border-radius: 25px;
+
+     color: rgb(245, 249, 253, 0.85);
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;          /*TIPOGRAFIA*/
+    word-spacing: 0.4rem;           
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+     box-shadow: 0 5px 20px 2px rgba(0,0,0,0.25);
+      backdrop-filter: blur(2.5px);
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw 15vh 10vw;
+    row-gap: 10vh;
+}
+
+.riga{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2vw 0 0;
+    column-gap: 3vw;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0,0.05);
+}
+
+.iconroom2{
+    aspect-ratio: 1/1;
+    border-radius: 25px 0px 0px 25px;
+    width: 20vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F8AC9;
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,0.25);
+}
+
+.iconroom2 svg{
+    aspect-ratio: 1/1;
+    width: 60%;
+}
+
+.infotxt{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    justify-content: center;
+}
+
+.infotxt p{
+   font-weight: 200;
+    font-size: clamp(0.7rem, 1vw, 1.2rem);
+    word-spacing: 0.3rem;           /*TIPOGRAFIA*/
+    letter-spacing: 0.15rem;
+    line-height: 1.5rem;
+}
+
+/* ADATTAMENTO DISPOSITIVI */
+
+@media (max-width: 1400px) {  /* Di base per il testo degli eventi.html */
+   .sect-eventi, .sect-eventi2{
+      flex-direction: column-reverse;
+    align-items: center;
+    padding: 12vh 8vw;
+    }
+    .sect-eventi2{
+        padding-top: 16vh;
+    }
+    .txtbox-eventi{
+        padding: 6vh 18vw; 
+    }    
+    .txtbox2-eventi{
+        padding: 6vh 18vw 0vh 18vw; 
+    }
+}
+
+@media (max-width: 1100px) { 
+    .sect-2, .sect-3{
+        align-items: center;
+         padding: 0 8vw;
+    }
+    .sect-2{
+         flex-direction: column;
+    }
+    .sect-3{
+         flex-direction: column-reverse;
+    }
+     .txtbox, .txtbox2{
+        padding: 12vh 18vw; 
+    }  
+
+    .sect-eventi img, .sect-eventi2 img{
+        width: 48vw;
+    }
+
+    .listap{
+     grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+
+    .iconroom2{
+        border-radius: 25px;
+    }
+    .riga{
+        align-items: center;
+        box-shadow: none;
+        flex-direction: column;
+    }
+
+    .infotxt{
+        text-align: center;
+        padding: 8vh 12vw 0 12vw;
+    }
+
+    .sect-card{
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 0;
+    }
+.card-city{
+    width: 30%;
+    padding: 5vh 0;
+}
+    
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10vh 5vw;
+    }
+    .footer-right{
+        align-items: center;
+        row-gap: 4vh;
+    }
+    .footer-left{
+        align-items: center;
+        row-gap: 3vh;
+        padding: 5vh 10vw 0 10vw;
+    }
+    .legal{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* MOBILE (Sotto i 768px) */
+@media (max-width: 780px) { 
+      
+      header svg{
+        width: 45vw;
+}
+    .image-box img{
+        width: 35vw;
+      }
+    .image-box2 img{
+    width: 70vw;
+    }
+
+    .sect-eventi img, .sect-eventi2 img{
+        width: 65vw;
+    }
+    .news-btn{
+        width: 10vw;
+    }
+    .news-btn svg{
+        width: 5vw;
+        height: 8vh;
+    }
+    #TM{
+        width: 8vw;
+        stroke-width: 5px;
+    }
+    #AS{
+        width: 20vw;
+    }
+
+    .iconroom2{
+         aspect-ratio: 1/1;
+    border-radius: 25px;
+    width: 40%;
+    }
+}
+
+/* MOBILE PICCOLO (Sotto i 480px) */
+@media (max-width: 480px) {
+
+#TM{
+        width: 12vw;
+        stroke-width: 10px;
+    }
+    #AS{
+        width: 30vw;
+    }
+
+    nav{
+        padding: 5vh 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+    
+    ul{
+        font-size: 2rem;
+        text-align: center;
+    
+    }
+
+    header svg{
+        width: 55vw;
+}
+    header p{
+        padding: 0 25vw;
+        text-align: center;
+    }
+    .cta{
+        display: flex;
+        flex-direction: column;
+    }
+    .listap{
+     grid-template-columns: 1fr; 
+    }
+
+    .newsletter-form input{
+        width: 35vw;
+    }
+}

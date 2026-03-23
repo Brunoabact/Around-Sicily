@@ -425,6 +425,12 @@ input:hover{
     flex-direction: row;
 }   
 
+.sect-eventi-mid{
+    padding: 16vh 8vw 20vh 8vw; 
+    display: flex;
+    flex-direction: row;
+}   
+
 .sect-eventi2{
      padding: 16vh 8vw 30vh 8vw; 
     display: flex;
@@ -718,6 +724,11 @@ input:hover{
     align-items: center;
     padding: 12vh 8vw;
     }
+    .sect-eventi-mid{
+ flex-direction: column;
+    align-items: center;
+    padding: 12vh 8vw;
+    }
     .sect-eventi2{
         flex-direction: column-reverse;
     align-items: center;
@@ -745,7 +756,7 @@ input:hover{
      .txtbox, .txtbox2{
         padding: 12vh 18vw; 
     }  
-    .sect-eventi img, .sect-eventi2 img{
+    .sect-eventi img, .sect-eventi2 img,.sect-eventi-mid img{
         width: 48vw;
     }
 
@@ -810,7 +821,7 @@ input:hover{
     width: 70vw;
     }
 
-    .sect-eventi img, .sect-eventi2 img{
+    .sect-eventi img, .sect-eventi2 img,.sect-eventi-mid img{
         width: 65vw;
     }
     .news-btn{
@@ -833,10 +844,17 @@ input:hover{
     border-radius: 25px;
     width: 40%;
     }
+
+   .newsletter-form input,.news-btn{
+        height: 6vh;
+    }
 }
 
 /* MOBILE PICCOLO (Sotto i 480px) */
 @media (max-width: 480px) {
+    .Trademark{
+        gap: 2vw;
+    }
     #TM{
         width: 12vw;
         stroke-width: 10px;
@@ -848,7 +866,11 @@ input:hover{
         padding: 5vh 0;
         flex-direction: column;
         align-items: center;
-        gap: 3vh;
+        gap: 2vh;
+        outline: #E8BA46 3px solid;
+        outline-offset: -3vh;
+        border-radius: 25px;
+        height: auto;
     }
     ul{
         font-size: 2rem;
@@ -868,7 +890,7 @@ input:hover{
         padding: 6vh 10vw ;
     }
 
-    .sect-eventi,.sect-eventi2{
+    .sect-eventi,.sect-eventi-mid,.sect-eventi2{
         padding: 0 7vw 5vh 7vw;
     }
 
@@ -885,7 +907,11 @@ input:hover{
     }
 
     .newsletter-form input{
-        width: 35vw;
+        width: 50vw;
+        
+    }
+    .news-btn{
+        width: 14vw;
     }
     .iconroom{
         width: 45vw;

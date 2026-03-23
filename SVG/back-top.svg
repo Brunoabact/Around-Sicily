@@ -1,15 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+      <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.3 40.8">
-  <defs>
     <style>
       .btop {
         fill: none;
-        stroke: #231f20;
+        stroke: #f5f9fd;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 10px;
       }
     </style>
     <polyline class="btop" points="5 35.65 33.58 7.07 62.3 35.8"/>
-
 </svg>

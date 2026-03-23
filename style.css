@@ -713,12 +713,14 @@ input:hover{
 /* ADATTAMENTO DISPOSITIVI */
 
 @media (max-width: 1400px) {  /* Di base per il testo degli eventi.html */
-   .sect-eventi, .sect-eventi2{
+   .sect-eventi{
       flex-direction: column-reverse;
     align-items: center;
     padding: 12vh 8vw;
     }
     .sect-eventi2{
+        flex-direction: column-reverse;
+    align-items: center;
         padding-top: 16vh;
     }
     .txtbox-eventi{
@@ -743,7 +745,6 @@ input:hover{
      .txtbox, .txtbox2{
         padding: 12vh 18vw; 
     }  
-
     .sect-eventi img, .sect-eventi2 img{
         width: 48vw;
     }
@@ -836,28 +837,23 @@ input:hover{
 
 /* MOBILE PICCOLO (Sotto i 480px) */
 @media (max-width: 480px) {
-
-#TM{
+    #TM{
         width: 12vw;
         stroke-width: 10px;
     }
     #AS{
         width: 30vw;
     }
-
     nav{
         padding: 5vh 0;
         flex-direction: column;
         align-items: center;
         gap: 3vh;
     }
-    
     ul{
         font-size: 2rem;
         text-align: center;
-    
     }
-
     header svg{
         width: 55vw;
 }
@@ -865,7 +861,22 @@ input:hover{
         padding: 0 25vw;
         text-align: center;
     }
-    .cta{
+    h1,h2,.txtbox p,.txtbox2 p,.btn-filled,.txtbox-eventi p,.txtbox2-eventi p{
+        text-align: center;
+    }
+    .txtbox-eventi,.txtbox2-eventi{
+        padding: 6vh 10vw ;
+    }
+
+    .sect-eventi,.sect-eventi2{
+        padding: 0 7vw 5vh 7vw;
+    }
+
+    .corpo{
+        text-align: center;
+        transform: translateX(0) translateY(0);
+    }
+    .cta,.cta2{
         display: flex;
         flex-direction: column;
     }
@@ -876,4 +887,17 @@ input:hover{
     .newsletter-form input{
         width: 35vw;
     }
+    .iconroom{
+        width: 45vw;
+    }
+    .card-city{
+        width: 45vw;
+    }
+    .iconroom2{
+        width: 45vw;
+    }
+    .last-sect{
+       padding: 20vh 5vw 20vh 5vw;
+    }
+
 }
